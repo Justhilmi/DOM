@@ -1,22 +1,23 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+<!DOCTYPE html>
+<html>
 <body>
-    <h2>JavaScript HTML DOM</h2>
-    <div id="main"></p>
-    <p>Finding HTML Element By Tag Name</p>
-    <p>This example demonstrates the <b>getElementByTagName</b> method.</p>
-    </div>
-    <p id="demo"></p>
-    <script>
-    const x = document.getElementById("main");
-    const y = document.getElementsByTagName("p");
-    document.getElementById("demo").innerHTML =
-    'The first paragraph (index 0) inside "main" is: ' + y[1].innerHTML
-    </script>
+
+<h2>JavaScript HTML DOM</h2>
+<img id="gambar" src="Sundower.webp" width=360 height=360>
+</br>
+<button id="zoomOut" onClick = "fZoomOut">+</button>
+<button id="zoomIn" onClick = "fZoomIn">-</button>
+
+<script>
+document.getElementById("image").src    = "Sundower.webp";
+document.getElementById("image").width 	= 	"320";
+document.getElementById("image").height =	"240";
+function fZoomOut(){
+alert("FFoomOut")
+}
+</script>
+
+<p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
 
 </body>
 </html>
