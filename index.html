@@ -5,9 +5,17 @@
     <title>Document</title>
 </head>
 <body>
+    <h2>JavaScript HTML DOM</h2>
+    <div id="main"></p>
+    <p>Finding HTML Element By Tag Name</p>
+    <p>This example demonstrates the <b>getElementByTagName</b> method.</p>
+    </div>
     <p id="demo"></p>
     <script>
-    document.getElementById("demo").innerHTML = "Hello World!";
+    const x = document.getElementById("main");
+    const y = document.getElementsByTagName("p");
+    document.getElementById("demo").innerHTML =
+    'The first paragraph (index 0) inside "main" is: ' + y[1].innerHTML
     </script>
 
 </body>
