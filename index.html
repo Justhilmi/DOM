@@ -5,19 +5,42 @@
 <h2>JavaScript HTML DOM</h2>
 <img id="gambar" src="Sundower.webp" width=360 height=360>
 </br>
-<button id="zoomOut" onClick = "fZoomOut">+</button>
-<button id="zoomIn" onClick = "fZoomIn">-</button>
+<button id="zoomOut" onclick = "fZoomOut()">-</button>
+<button id="zoomIn" onclick = "fZoomIn()">+</button>
 
 <script>
 document.getElementById("image").src    = "Sundower.webp";
 document.getElementById("image").width 	= 	"320";
 document.getElementById("image").height =	"240";
+
+function fZoomIn(){
+    alert("Zoom In")
+    // gambar.width ="200";
+    // gambar.height ="200";
+    gambar.width +=100;
+    gambar.height +=50;
+}
+
 function fZoomOut(){
-alert("FFoomOut")
+    alert("Zoom Out")
+    // gambar.width ="100";
+    // gambar.height ="100";
+    gambar.width -=100;
+    gambar.height -=50;
+}
+
+function validateForm(){
+    alert("OK")
+    return false
 }
 </script>
 
 <p>The original image was smiley.gif, but the script changed it to landscape.jpg</p>
-
+</br>
+<form name="myForm" action="https://youtube.com" onsubmit="return validateForm()" method="post">
+    Name: <input type="text" name="fname">
+    <input type="submit" value="Submit">
+  </form>
+  
 </body>
 </html>
